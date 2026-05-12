@@ -8,7 +8,7 @@ export const apiUrls = {
   compras: import.meta.env.VITE_COMPRAS_API_URL || 'http://localhost:8004',
 };
 
-export const useMocks = import.meta.env.VITE_USE_MOCKS !== 'true';
+export const useMocks = import.meta.env.VITE_USE_MOCKS !== 'false';
 
 export class ApiError extends Error {
   constructor(status, message) {
